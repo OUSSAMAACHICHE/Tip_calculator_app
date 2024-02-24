@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+  </head>
+
+  <body class="font-bodyFont bg-green-200 min-h-screen">
+
+    <h1 class="uppercase tracking-[1rem] text-3xl text-center mt-8 text-neutral-darkGrayishCyan">spli <br>tter</h1>
+
+    <main class="md:max-w-[900px] lg:grid lg:grid-cols-2 lg:gap-6 lg:items-center bg-neutral-white py-4 px-8 rounded-tl-[35px] rounded-tr-[35px] lg:rounded-bl-[35px] lg:rounded-br-[35px] mt-5 mx-auto">
+      <section>
+        <div class="bill my-9 lg:mb-5 relative">
+          <h4 class="text-neutral-darkGrayishCyan">Bill</h4>
+          <input id="bill" class="my-1" type="number" name="bill">
+        </div>
+
+        <div class="select-tip mb-5">
+          <h4 class="py-2 capitalize text-neutral-darkGrayishCyan text-lg">select tip %</h4>
+          <ul class="grid grid-cols-2 gap-4 md:grid-cols-3">
+            <li data-index="5">5%</li>
+            <li data-index="10">10%</li>
+            <li data-index="15">15%</li>
+            <li data-index="20">20%</li>
+            <li data-index="50">50%</li>
+            <input id="custom" type="number" name="custom" placeholder="Custom">
+          </ul>
+        </div>
+
+        <div class="number-of-people relative">
+          <h4 class="my-2 text-neutral-darkGrayishCyan capitalize">number of people</h4>
+          <input type="number" name="people" id="people">
+          <p id="wrong" class="text-red-600"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-neutral-veryDarkCyan my-5 rounded-md p-5">
+          <div class="flex justify-between mb-4 lg:mb-10">
+            <h4 class="text-neutral-white">Tip Amount <span class="block text-neutral-grayishCyan text-sm">/ person</span></h4>
+            <p id="tip-amount" class=" text-primary-StrongCyan text-4xl">$0.00</p>
+          </div>
+          <div class="flex justify-between">
+            <h4 class="text-neutral-white">Total<span class="block text-neutral-grayishCyan text-sm">/ person</span></h4>
+            <p id="total" class="text-4xl text-primary-StrongCyan">$0.00</p>
+          </div>
+          <button class="text-neutral-900 bg-primary-StrongCyan w-full p-3 rounded-md mt-5 hover:transition-all hover:duration-100 hover:bg-green-300 uppercase lg:mt-52 opacity-20">Reset</button>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/oussama-achi-b6b281294/" target="_blank">Ouss_Ach.</a>.
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+
+</html>

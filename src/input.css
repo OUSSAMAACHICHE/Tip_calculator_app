@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Hide the arrows for number inputs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* inputs style  */
+input {
+	@apply text-fontInputs text-right w-full  text-neutral-veryDarkCyan px-3 py-2 bg-neutral-veryLightGrayishCyan focus-within:outline-primary-StrongCyan focus-within:caret-primary-StrongCyan rounded-md;
+}
+.bill::before,
+.number-of-people::before {
+	content: url(../images/icon-dollar.svg);
+	position: absolute;
+	top: 44px;
+	@apply text-neutral-grayishCyan;
+	left: 15px;
+	
+}
+.number-of-people::before {
+	 content: url('../images/icon-person.svg');
+}
+.select-tip ul li {
+	@apply bg-neutral-veryDarkCyan p-3 rounded-md text-center text-neutral-white text-fontInputs cursor-pointer;
+}
+.select-tip ul li
+{
+	@apply hover:bg-green-200 hover:transition-all hover:duration-100 hover:text-neutral-950;
+}
+.select-tip ul li.active {
+	@apply bg-green-200 hover:transition-all hover:duration-100 text-neutral-950;
+}
+#people.wrong {
+	outline-color: red;
+}
+
+.attribution {
+	font-size: 13px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(51, 76%, 43%);
+}
