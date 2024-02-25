@@ -615,6 +615,14 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
